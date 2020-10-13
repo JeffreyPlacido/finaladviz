@@ -1,0 +1,112 @@
+.container {
+  margin-top: 20%;
+  padding: 0 50%;
+}
+
+.myButton {
+  box-shadow: inset 0px 0px 19px -15px #bbdaf7;
+  background: linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
+  background-color: #79bbff;
+  border-radius: 20px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 10px;
+  padding: 10px 30px;
+  text-decoration: none;
+}
+.myButton:hover {
+  background: linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
+  background-color: #378de5;
+}
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+
+.container img {
+  width: 300px;
+  padding: 0 10px;
+}
+
+@media (max-width: 768px) {
+  .container img {
+    width: 60vw;
+    padding: 15px;
+  }
+}
+
+.grid-container {
+  width: 50%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  justify-content: space-around;
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    margin-top: 26vh;
+    width: 50%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    justify-content: space-around;
+  }
+}
+
+.blog {
+  color: black;
+  text-align: center;
+  padding: 0 0 25px 0;
+}
+
+.blog h3 {
+  font-size: 30px;
+  margin-block-start: 0;
+  margin-block-end: 10px;
+  font-family: "Amatic SC", cursive;
+}
+
+.comment-likes {
+  font-size: 13px;
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 5%;
+  color: black;
+}
+.comment-likes a {
+  text-decoration: none;
+  color: darkgray;
+  padding: 0 10px 0 0;
+}
+
+.comments {
+  display: flex;
+  padding: 10px;
+}
+
+.icons {
+  padding: 0 5px;
+  color: #378de5;
+}
+
+@media (max-width: 768px) {
+  .blog {
+    color: black;
+    text-align: center;
+    font-size: 3vw;
+  }
+}
+
+@media (min-width: 2000px) {
+  .grid-container {
+    margin-top: -15vh;
+    width: 25%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto;
+    justify-content: space-around;
+  }
+}

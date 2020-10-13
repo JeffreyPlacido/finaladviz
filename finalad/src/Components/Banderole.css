@@ -1,0 +1,145 @@
+body {
+  background-color: #fff;
+  color: #fff;
+  font-family: Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  line-height: 2em;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: white;
+  height: 22vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .logo {
+    margin-left: 42vw;
+    margin-top: -16vh;
+    width: 130px;
+    height: 130px;
+    z-index: 4;
+    position: absolute;
+  }
+}
+
+@media (min-width: 1024px) {
+  .logo {
+    margin-left: 45vw;
+    margin-top: -16vh;
+    width: 130px;
+    height: 130px;
+    z-index: 4;
+    position: absolute;
+  }
+}
+
+@media (min-width: 1440px) {
+  .logo {
+    margin-left: 45vw;
+    margin-top: -16vh;
+    width: 130px;
+    height: 130px;
+    z-index: 4;
+    position: absolute;
+  }
+}
+
+.wave {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #595353;
+  height: 4rem;
+  top: -18vh;
+  position: relative;
+  margin-top: 15vh;
+}
+.wave::before,
+.wave::after {
+  content: "";
+  position: absolute;
+  left: -20px;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat-x;
+}
+.wave::before {
+  height: 10px;
+  background-size: 20px 20px;
+  background-image: radial-gradient(
+    circle at 10px -5px,
+    transparent 12px,
+    white 13px
+  );
+}
+.wave::after {
+  height: 15px;
+  background-size: 3000px 20px;
+  background-image: radial-gradient(
+    circle at 10px 15px,
+    white 12px,
+    transparent 13px
+  );
+}
+.wave--top {
+  background: #595353;
+}
+.wave--top::before,
+.wave--top::after {
+  bottom: auto;
+  top: 0;
+}
+.wave--top::before {
+  background-image: radial-gradient(
+    circle at 10px 15px,
+    transparent 12px,
+    white 13px
+  );
+}
+.wave--top::after {
+  background-image: radial-gradient(
+    circle at 10px 0,
+    white 12px,
+    transparent 13px
+  );
+}
+
+.infoBar {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  margin-top: -22vh;
+  width: 100vw;
+  padding: 0 0.5rem 0.5rem 0.5rem;
+  background-color: #595353;
+  z-index: 10;
+  font-size: large;
+  color: white;
+  position: fixed;
+}
+
+.rightinfo {
+  padding-right: 10vw;
+  font-size: 14px;
+  opacity: 70%;
+}
+.rightinfo:hover {
+  color: #378de5;
+  cursor: pointer;
+}
+
+.leftinfo {
+  font-size: 25px;
+  padding-left: 10vw;
+  font-family: "Amatic SC", cursive;
+}
+
+.leftinfo:hover {
+  color: #378de5;
+  cursor: pointer;
+}

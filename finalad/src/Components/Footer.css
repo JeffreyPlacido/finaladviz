@@ -1,0 +1,49 @@
+.FooterContainer {
+  background-color: #595353;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-evenly;
+  text-align: center;
+  font-family: "Amatic SC", cursive;
+}
+
+.schedule h2 {
+  margin-top: 2vh;
+  font-size: 30px;
+}
+
+.schedule p {
+  font-size: 20px;
+  margin-top: -2vh;
+}
+
+.follow {
+  font-size: 20px;
+}
+
+.follow div {
+  margin-top: -1em;
+}
+
+.phone {
+  margin-top: 0.4em;
+}
+
+.phone .tel {
+  margin-top: -1em;
+  font-size: 1.2em;
+}
+
+.phonecolor {
+  margin-top: -0.4em;
+  padding-left: 10px;
+  font-weight: bold;
+  color: #0609b3;
+}
+
+.iconcontainer svg {
+  margin-right: 15px;
+  border-radius: 50%;
+  padding: 10px;
+  background-color: #378de5;
+}
